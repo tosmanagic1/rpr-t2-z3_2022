@@ -4,8 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import static java.util.Collections.max;
-import static java.util.Collections.min;
+import static java.util.Collections.*;
 
 public class Main
 {
@@ -39,6 +38,8 @@ public class Main
             Double standardnaDevijacija = Math.sqrt(pomocnaVarijabla/lista.size());
 
             Double median = new Double(0);
+
+            sort(lista);
 
             if (lista.size()%2 == 1) {
                 Integer indeks = ((lista.size()+1)/2)-1;
